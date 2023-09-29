@@ -22,7 +22,7 @@ echo "\_| \_\__,_| .__/|_|\__,_|  \____/_| |_|\__,_|_|_| |_|"
 echo "           | |                                        "
 echo "           |_|                                        "
 sudo apt update && sudo apt upgrade -y
-sudo apt install gcc make git -y
+sudo apt install gcc make git libc6-dev -y
 wget https://go.dev/dl/go1.21.1.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
 rm -rf go1.21.1.linux-amd64.tar.gz
