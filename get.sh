@@ -49,7 +49,7 @@ After=network.target
 [Service]
 User=$USER
 Type=simple
-ExecStart=$HOME/go/bin/rapidd start
+ExecStart=$HOME/go/bin/rapidd start --metrics --pruning=nothing --evm.tracer=json --trace --log_level info --minimum-gas-prices=0.0001arapid --json-rpc.api eth,txpool,personal,net,debug,web3,miner --api.enable --json-rpc.enable
 Restart=on-failure
 LimitNOFILE=65535
 
