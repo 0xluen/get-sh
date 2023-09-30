@@ -37,6 +37,7 @@ mkdir .rapidd
 cd mainnet
 cp -r data ../.rapidd/data
 cp -r config ../.rapidd/config
+cd
 git clone https://github.com/RapidChainIO/Rapid-Chain.git
 cd Rapid-Chain
 make install
