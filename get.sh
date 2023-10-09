@@ -61,7 +61,7 @@ sudo systemctl restart systemd-journald
 sudo systemctl daemon-reload
 sudo systemctl enable rapidd
 sudo systemctl restart rapidd
-mv $HOME/go/bin/rapidd /usr/local/bin/
+cp -r $HOME/go/bin/rapidd /usr/local/bin/rapidd
 rapidd keys add wallet
 
 if [ $? -eq 0 ]; then
